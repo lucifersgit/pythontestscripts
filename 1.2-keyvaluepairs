@@ -1,3 +1,6 @@
+### References: https://www.w3resource.com/python-exercises/python-basic-exercise-83.php
+### 		https://www.youtube.com/watch?v=daefaLgNkw0 - Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs
+
 student = {'name' : 'John', 'age': 11}
 age = int(student.get('age'))
 minage = int(18)
