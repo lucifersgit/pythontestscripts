@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ages=$(awk 'NR>1' nameandagelist  | awk  {'print $2'})
+
+echo "$ages"
