@@ -1,0 +1,7 @@
+### Person has defined name and age (as stated in a text file)
+
+### Print out age (number/integer) for person
+
+### Define if age is greater then desired value
+
+### If age is greater than defined value, then print out person's name
