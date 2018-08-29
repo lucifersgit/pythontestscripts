@@ -2,4 +2,6 @@
 
 ages=$(awk 'NR>1' nameandagelist  | awk  {'print $2'})
 
-echo "$ages"
+if ("$ages" > 18); then
+	echo "$ages"
+fi
