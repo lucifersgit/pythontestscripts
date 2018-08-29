@@ -1,0 +1,11 @@
+student = {'name' : 'John', 'age': 11}
+age = int(student.get('age'))
+minage = int(18)
+
+print "student profile info:", student
+
+if age > minage:
+	print(student.get('name')), "is older than", minage
+
+elif age < minage:
+	print(student.get('name')), "is younger than", minage
