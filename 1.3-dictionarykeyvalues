@@ -1,0 +1,13 @@
+### References: https://www.w3resource.com/python-exercises/python-basic-exercise-83.php
+### 		https://www.youtube.com/watch?v=daefaLgNkw0 - Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs
+
+### This is a dictionary of key-value pairs. The 'students' are given a 'name' and an 'age' property:
+
+student = [{'name' : 'John', 'age': 11}, {'name' : 'Ian', 'age': 19}, {'name' : 'Susan', 'age': 13}, {'name' : 'Stuart', 'age': 22}]
+
+### This command iterates over 'students', and prints out the appropriate response (based on the condition)
+for x in student:
+    if x["age"] > 18:
+        print x["name"], "is over 18"
+    elif x["age"] < 18:
+	print x["name"], "is under 18"
