@@ -12,4 +12,3 @@ if age > minage:
 
 elif age < minage:
 	print(student.get('name')), "is younger than", minage
-
