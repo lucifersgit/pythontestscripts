@@ -1,11 +1,13 @@
 ### References: https://stackoverflow.com/questions/5942874/python-converting-textfile-contents-into-dictionary-values-keys-easily
+###		https://stackoverflow.com/questions/275018/how-can-i-remove-chomp-a-trailing-newline-in-python
+###		https://stackoverflow.com/questions/17610732/error-dictionary-update-sequence-element-0-has-length-1-2-is-required-on-dj
 
 ### Python test script to read text file as dictionary
 
 def nameagelist():
 f = dict(line.strip().split() for line in file('/home/lucifer/pythontestscripts/nameandagelist'))
 
-
+### Need to find a way to parse the information as both 'name' and 'age', where name is string and age is an integer...
 
 print f
 
