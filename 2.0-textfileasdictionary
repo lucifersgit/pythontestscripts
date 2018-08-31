@@ -2,14 +2,15 @@
 
 ### Python test script to read text file as dictionary
 
+def nameagelist():
+f = dict(line.strip().split() for line in file('/home/lucifer/pythontestscripts/nameandagelist'))
 
 
-d = dict(line.strip().split() for line in file('/home/lucifer/pythontestscripts/nameandagelist'))
 
-print d 
+print f
 
-#for x in d:
-#    if x["age"] > 18:
+#for x in f:
+#    if x["age"] > minage:
 #        print x["name"], "is over 18"
-#    elif x["age"] < 18:
+#    elif x["age"] < minage:
 #	print x["name"], "is under 18"
