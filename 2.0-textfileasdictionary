@@ -1,0 +1,15 @@
+### References: https://stackoverflow.com/questions/5942874/python-converting-textfile-contents-into-dictionary-values-keys-easily
+
+### Python test script to read text file as dictionary
+
+
+
+d = dict(line.strip().split() for line in file('/home/lucifer/pythontestscripts/nameandagelist'))
+
+print d 
+
+#for x in d:
+#    if x["age"] > 18:
+#        print x["name"], "is over 18"
+#    elif x["age"] < 18:
+#	print x["name"], "is under 18"
