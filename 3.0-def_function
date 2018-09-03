@@ -1,0 +1,13 @@
+### This is the script used from Aaron's response 
+
+def my_function_name(student_list):
+    over_18s = []
+    for x in student_list:
+        if x["age"] > 18:
+            over_18s.append(x["name"])
+    return over_18s
+
+student = [{'name' : 'John', 'age': 11}, {'name' : 'Ian', 'age': 19}, {'name' : 'Susan', 'age': 13}, {'name' : 'Stuart', 'age': 22}]
+over_18_students = my_function_name(student)
+#print(over_18_students)
+print('\n'.join(over_18_students))
