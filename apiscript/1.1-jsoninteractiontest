@@ -7,6 +7,6 @@ posts = requests.get('https://jsonplaceholder.typicode.com/posts')
 users = requests.get('https://jsonplaceholder.typicode.com/users')
 todos = requests.get('https://jsonplaceholder.typicode.com/todos')
 
-print posts.text
+#print posts.text
 print users.text
-print todos.text
+#print todos.text
