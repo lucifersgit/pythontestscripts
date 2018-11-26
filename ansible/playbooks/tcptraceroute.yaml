@@ -1,0 +1,12 @@
+---
+- hosts: all #ubuntu-node-01
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+  connection: ssh
+  gather_facts: yes
+  tasks:
+  - name: Install tcptraceroute on Ubuntu
+    apt:
+      name: tcptraceroute
+      state: present

@@ -1,0 +1,9 @@
+28-Aug-2018 08:35:10.552 INFO [SCM polling for hudson.model.FreeStyleProject@4540d674[package]] hudson.triggers.SCMTrigger$Runner.run SCM changes detected in package. Triggering  #20
+28-Aug-2018 08:35:11.168 INFO [SCMTrigger [#4]] hudson.triggers.SCMTrigger$Runner.run SCM changes detected in package. Triggering  #20
+28-Aug-2018 08:35:26.587 INFO [Executor #1 for master : executing package #20] hudson.model.Run.execute package #20 main build action completed: SUCCESS
+28-Aug-2018 08:35:35.337 INFO [Executor #1 for master : executing deploy-to-staging #11] hudson.model.Run.execute deploy-to-staging #11 main build action completed: SUCCESS
+28-Aug-2018 08:35:35.346 WARNING [Executor #1 for master : executing deploy-to-staging #11] org.jenkinsci.remoting.util.AnonymousClassWarnings.warn Attempt to (de-)serialize anonymous class com.cloudbees.plugins.credentials.CredentialsScope$2 in file:/home/lucifer/.jenkins/plugins/credentials/WEB-INF/lib/credentials.jar; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+28-Aug-2018 08:35:36.294 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/webapp]
+28-Aug-2018 08:35:36.302 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/lucifer/tomcat-staging/webapps/webapp.war]
+28-Aug-2018 08:35:36.330 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/lucifer/tomcat-staging/webapps/webapp.war] has finished in [28] ms
+28-Aug-2018 08:35:39.915 INFO [Executor #0 for master : executing static analysis #5] hudson.model.Run.execute static analysis #5 main build action completed: SUCCESS

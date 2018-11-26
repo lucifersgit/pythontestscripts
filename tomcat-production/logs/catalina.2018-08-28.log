@@ -1,0 +1,31 @@
+28-Aug-2018 08:35:10.625 INFO [SCM polling for hudson.model.FreeStyleProject@2fe61791[package]] hudson.triggers.SCMTrigger$Runner.run SCM changes detected in package. Triggering  #20
+28-Aug-2018 08:35:11.243 INFO [SCMTrigger [#4]] hudson.triggers.SCMTrigger$Runner.run SCM changes detected in package. Triggering  #20
+28-Aug-2018 08:35:20.295 WARNING [Executor #1 for master] jenkins.model.lazy.LazyBuildMixIn.newBuild A new build could not be created in job package
+ java.lang.IllegalStateException: JENKINS-23152: /home/lucifer/.jenkins/jobs/package/builds/20 already existed; will not overwrite with package #20
+	at hudson.model.RunMap.put(RunMap.java:189)
+	at jenkins.model.lazy.LazyBuildMixIn.newBuild(LazyBuildMixIn.java:185)
+	at hudson.model.AbstractProject.newBuild(AbstractProject.java:967)
+	at hudson.model.AbstractProject.createExecutable(AbstractProject.java:1143)
+	at hudson.model.AbstractProject.createExecutable(AbstractProject.java:137)
+	at hudson.model.Executor$1.call(Executor.java:365)
+	at hudson.model.Executor$1.call(Executor.java:347)
+	at hudson.model.Queue._withLock(Queue.java:1439)
+	at hudson.model.Queue.withLock(Queue.java:1300)
+	at hudson.model.Executor.run(Executor.java:347)
+
+28-Aug-2018 08:35:20.296 SEVERE [Executor #1 for master] hudson.model.Executor.run Executor #1 for master: Unexpected executor death
+ java.lang.Error: java.lang.IllegalStateException: JENKINS-23152: /home/lucifer/.jenkins/jobs/package/builds/20 already existed; will not overwrite with package #20
+	at jenkins.model.lazy.LazyBuildMixIn.newBuild(LazyBuildMixIn.java:193)
+	at hudson.model.AbstractProject.newBuild(AbstractProject.java:967)
+	at hudson.model.AbstractProject.createExecutable(AbstractProject.java:1143)
+	at hudson.model.AbstractProject.createExecutable(AbstractProject.java:137)
+	at hudson.model.Executor$1.call(Executor.java:365)
+	at hudson.model.Executor$1.call(Executor.java:347)
+	at hudson.model.Queue._withLock(Queue.java:1439)
+	at hudson.model.Queue.withLock(Queue.java:1300)
+	at hudson.model.Executor.run(Executor.java:347)
+Caused by: java.lang.IllegalStateException: JENKINS-23152: /home/lucifer/.jenkins/jobs/package/builds/20 already existed; will not overwrite with package #20
+	at hudson.model.RunMap.put(RunMap.java:189)
+	at jenkins.model.lazy.LazyBuildMixIn.newBuild(LazyBuildMixIn.java:185)
+	... 8 more
+
